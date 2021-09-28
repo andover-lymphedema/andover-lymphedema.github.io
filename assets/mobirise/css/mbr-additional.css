@@ -525,17 +525,12 @@ a.text-black.active {
   color: #000000 !important;
 }
 a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]) {
+  transition: 0.2s;
   position: relative;
-  background-image: transparent;
+  background-image: linear-gradient(currentColor 50%, currentColor 50%);
   background-size: 10000px 2px;
   background-repeat: no-repeat;
-  background-position: 0px 1.2em;
-  background-position: -10000px 1.2em;
-}
-a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):hover {
-  transition: background-position 2s ease-in-out;
-  background-image: linear-gradient(currentColor 50%, currentColor 50%);
-  background-position: 0px 1.2em;
+  background-position: 0 1.2em;
 }
 .nav-tabs .nav-link.active {
   color: #6592e6;
@@ -863,8 +858,8 @@ a {
   color: #ffffff;
 }
 .cid-sothHgNbHe {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: #ffffff;
 }
 .cid-sothHgNbHe .image-wrapper {
@@ -891,8 +886,8 @@ a {
   text-align: left;
 }
 .cid-snpLVVaYue {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   background-color: #85a3a7;
 }
 .cid-snpLVVaYue .mbr-text,
@@ -904,8 +899,8 @@ a {
   text-align: left;
 }
 .cid-snpdmr6qer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
 }
 .cid-snpdmr6qer .image-wrapper {
@@ -933,16 +928,9 @@ a {
   padding-right: 1.5rem;
   color: #6592e6;
 }
-.cid-snJrUfBSUl {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #232323;
-}
 .cid-snJsI54Zjx {
   z-index: 1000;
   width: 100%;
-  position: relative;
-  min-height: 60px;
 }
 .cid-snJsI54Zjx nav.navbar {
   position: fixed;
@@ -1042,8 +1030,7 @@ a {
   min-height: 70px;
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
 }
 .cid-snJsI54Zjx .navbar.opened {
   transition: all 0.3s;
@@ -1069,7 +1056,7 @@ a {
 }
 @media (min-width: 992px) {
   .cid-snJsI54Zjx .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
-    max-height: calc(98.5vh - 5.1rem);
+    max-height: calc(98.5vh - 4rem);
   }
 }
 .cid-snJsI54Zjx .navbar.collapsed .dropdown-menu .dropdown-submenu {
@@ -1289,4 +1276,94 @@ a {
     max-width: calc(100% + 2rem);
     left: -1rem;
   }
+}
+.cid-sFIxiwt7Ve {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+}
+.cid-sFIxiwt7Ve .top-line {
+  display: flex;
+  justify-content: space-between;
+}
+.cid-sFIxiwt7Ve .mbr-section-title,
+.cid-sFIxiwt7Ve .mbr-section-subtitle {
+  text-align: center;
+}
+.cid-sFIxiwt7Ve .card:not(:nth-last-child(1)) {
+  margin-bottom: 2rem;
+}
+.cid-sFIxiwt7Ve .card-wrapper {
+  border-radius: 4px;
+  background-color: #fafafa;
+  background-color: transparent;
+}
+.cid-sFIxiwt7Ve .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .cid-sFIxiwt7Ve .card-box {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .cid-sFIxiwt7Ve .card-box {
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-sFIxiwt7Ve .card-box {
+    padding-left: 2rem;
+    padding-right: 4rem;
+  }
+}
+.cid-sK4EbM3sd3 {
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-sK4EbM3sd3 .top-line {
+  display: flex;
+  justify-content: space-between;
+}
+.cid-sK4EbM3sd3 .mbr-section-title,
+.cid-sK4EbM3sd3 .mbr-section-subtitle {
+  text-align: center;
+}
+.cid-sK4EbM3sd3 .card:not(:nth-last-child(1)) {
+  margin-bottom: 2rem;
+}
+.cid-sK4EbM3sd3 .card-wrapper {
+  border-radius: 4px;
+  background-color: #fafafa;
+  background-color: transparent;
+}
+.cid-sK4EbM3sd3 .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .cid-sK4EbM3sd3 .card-box {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .cid-sK4EbM3sd3 .card-box {
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-sK4EbM3sd3 .card-box {
+    padding-left: 2rem;
+    padding-right: 4rem;
+  }
+}
+.cid-sK4EbM3sd3 .card-title {
+  color: #8caff0;
+}
+.cid-snJrUfBSUl {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #232323;
 }
